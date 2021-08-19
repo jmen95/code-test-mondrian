@@ -1,0 +1,120 @@
+:root {
+    --color-gray: #A4A3AB;
+    --color-light-gray: #CBCDCB;
+    --color-blue: #1C293C;
+    --color-black: #0A0A0B;
+    --color-orange: #C53614;
+    --color-yellow: #E8C217;
+  }
+
+.title{
+    font-size:2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.piet-mondrian{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 14.29% 11.19% 27.26% 19.88% 21.07% 6.31%; */
+    /* grid-template-rows: 1.43% 11.35% 14.93% 20.79% 13.62% 14.58% 17.32% 5.98%; */
+}
+.piet-mondrian__item{
+    grid-column-end: auto;
+    border: 1px solid #000;
+}
+.piet-mondrian__item--gray{
+    background-color:var(--color-gray);
+    order: 1;
+}
+.piet-mondrian__item--light-gray{
+    background-color:var(--color-light-gray);
+    order: 2;
+}
+
+.piet-mondrian__item--blue{
+    background-color:var(--color-blue);
+    order: 3;
+}
+
+.piet-mondrian__item--black{
+    background-color:var(--color-black);
+    order: 4;
+}
+
+.piet-mondrian__item--orange{
+    background-color:var(--color-orange);
+    order: 5;
+}
+
+.piet-mondrian__item--yellow{
+    background-color:var(--color-yellow);
+    order: 6;
+}
+
+.piet-mondrian__item-27{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--color-black)
+}
+
+
+@media screen and (min-width: 600px) {
+    .piet-mondrian{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 14.29% 11.19% 27.26% 19.88% 21.07% 6.31%;
+        grid-template-rows: 1.43% 11.35% 14.93% 20.79% 13.62% 14.58% 17.32% 5.98%;
+        /* grid-auto-flow: dense; */
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .piet-mondrian__item-2{
+        grid-column: span 3;
+    }
+    .piet-mondrian__item-3{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .piet-mondrian__item-4{
+        grid-row: span 3;
+    }
+    .piet-mondrian__item-6{
+        grid-column: span 2;
+    }
+    .piet-mondrian__item-7{
+        grid-column: span 2;
+    }
+    .piet-mondrian__item-13{
+        grid-row: span 2;
+    }
+    .piet-mondrian__item-14{
+        grid-row: span 2;
+    }
+    .piet-mondrian__item-15{
+        grid-row: span 3;
+    }
+    .piet-mondrian__item-16{
+        grid-row: span 3;
+    }
+    .piet-mondrian__item-17{
+        grid-row: span 3;
+    }
+    .piet-mondrian__item-25{
+        grid-row: span 3;
+    }
+    .piet-mondrian__item-26{
+        grid-column: span 2;
+    }
+    .piet-mondrian__item-27{
+        grid-column: span 2;
+    }
+    .piet-mondrian__item{
+        order:0
+    }
+}
